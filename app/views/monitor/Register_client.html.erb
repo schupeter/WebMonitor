@@ -1,0 +1,34 @@
+<%= render :partial => 'head' %>
+<title>Web monitor service: register a resource</title>
+</head>
+<body>
+<% @page_name = "Register" %>
+<%= render :partial => 'navigation' %>
+<center>
+	<h1>Register a Resource</h1>
+	<br/>
+	<form name="formRegister" method="post" action="/monitor/Register">
+		<input type="hidden" name="REQUEST" value="Register" />
+		<input type="hidden" value="<%= form_authenticity_token() %>" name="authenticity_token"/>
+		<table>
+			<tr>
+				<td><b>URL:</b></td>
+				<td><input type="text" name="URL" size="74" /></td>
+			</tr>
+			<tr><td></td><td></td></tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="Register">
+				</td>
+			</tr>
+		</table>
+	</form>
+</center>
+<br/>
+<br/>
+<div class="box">
+	<h3>Instructions:</h3>
+	<p>To register a web page or web service, enter its URL above and press the <i>Register</i> button.
+	<p>Once something has been registered, you can <a href="/monitor/Test">test it</a>.</p>
+</div>
+<%= render :partial => 'tail' %>

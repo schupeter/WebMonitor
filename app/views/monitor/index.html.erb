@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Web Monitor home page</title>
+<meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet"  href="/monitor.css" type="text/css"/>
+<style type="text/css">
+	div.splash {
+		width: 1000px;
+		padding-top: 70px;
+		margin-left: auto;
+		margin-right: auto; 
+	}
+	div.splashTitle1 {
+		float: left;
+		text-align:left;
+		color: #435FC7;
+		font-size: 68px;
+		font-style: italic;
+		font-weight: bold;
+		margin-left: 225px;
+		margin-top: 72px;
+	}
+	div.splashTitle2 {
+		float:left;
+		text-align: left;
+		padding-left: 2px;
+		color: #333399;
+		font-size: 78px;
+		font-weight: bold;
+		margin-top: 80px;
+	}
+	div.splashText {
+		clear:both;
+		padding-top: 20px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	div.splashMenuLeft {
+		float: left;
+		margin-left: 160px;
+	}
+	div.splashMenuCenter {
+		float: left;
+		font-size: 22px; 
+		font-weight: bold; 
+		text-align: center;
+		padding-top: 20px;
+		margin-left:70px;
+		margin-right:70px;
+	}
+	div.splashMenuRight {
+		float: left;
+	}
+	a:hover {
+		background-color: #fc3;		/* yellow rollover box */ 
+		color: #339;			/* blue text & border  */ 
+	}
+	div.disclaimer {
+		clear: both;
+		padding-top:80px;
+		margin-left: 180px;
+		margin-right: 180px;
+		text-align: center;
+		font-size: 0.8em;
+	}
+</style>
+</head>
+<body>
+
+<div class="splash">
+  <div class="container">
+
+			<div class="splashTitle1">Web</div>
+			<div class="splashTitle2">Monitor</div>
+
+			<div class="splashText">
+				The simple interface that lets you <b><br/>register</b> and <b>monitor<br/>web resources.</b>
+			</div>
+			
+			<div class="splashMenuLeft">
+			 &nbsp;
+			</div>
+			
+			<div class="splashMenuCenter">
+<%= render :partial => 'navigation' %>			
+			</div>
+			
+
+			<div class="disclaimer">
+				<hr  width="480px"/><br/>
+				<p>While every effort has been made to ensure the reliability of this content and services, <br/>they are not covered by any warranty, express or implied. </p>
+				<p>Usage of this site is governed by a long and tedious <a href="/home/legal">legal agreement</a>.</p>
+			</div>
+	</div>
+</div>
+</body>
+</html>

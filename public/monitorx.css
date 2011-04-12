@@ -1,0 +1,194 @@
+	body {
+		padding: 0;
+		margin: 0;
+		background-color: #CCD2D5;
+		color: #000000;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	div.page {
+		width: 1002px;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+		clear:left;
+	}
+	
+	div.header {
+		position: absolute;
+		top:0px;
+		padding-left: 20px;
+		width:980px;
+		padding-top: 5px;
+		height: 45px;
+		background-color: #B5B5B5;
+		text-align: left;
+	}
+	div.headerTitle1 {
+		color: #435FC7;
+		font-size: 28px;
+		font-style: italic;
+		font-weight: bold;
+		margin-left: 8px;
+		margin-right: 2px;
+		float: left;
+	}
+	div.headerTitle2 {
+		color: #333399;
+		font-size: 32px;
+		font-weight: bold;
+		margin-left: 20px;
+		margin-top: 3px;
+	}
+	div.container {
+		background-color: #F5F5F5;
+		width: 1000px;
+		margin:auto;
+		position: absolute;
+		top: 50px;
+		color: #000000;
+		min-height: 600px;
+	}
+	div.navcontainer {
+		float: left;
+		width: 170px;
+		margin:0;
+		background-color: #339;
+	}
+	div.content {
+		margin-left:190px;
+		padding-right:20px;
+		text-align: left;
+		color: #000000;
+	}
+	div.footer {
+		background-color: #B5B5B5;
+		clear: both;
+		padding-left: 20px;
+		width:980px;
+		height: 45px;
+		text-align: left;
+	}
+	
+/* Headings */
+h1 { font: 28px; font-weight: bold; font-style: italic; padding-top: 20px; }
+h2 { font: 22px; font-weight: bold; text-align: center; }
+h3 { font: 18px; font-weight: bold; color: #339; text-align: center; }
+h4 { font: 14px; font-weight: bold; color: #339; }
+h5, h6 { color: #339; }
+
+/* Links */
+a:link {color: #000077; font-weight: bold; text-decoration: none; }
+a:visited {color: #000077; font-weight: bold; text-decoration: none; }
+a:hover {color: #000000; font-weight: bold; text-decoration: none; }
+a:active {color: #635445; font-weight: bold; text-decoration: none; }
+	
+/* Leading */
+.nospacebefore 	 { margin-top: 0; }
+.bitspacebefore	 { margin-top: 0.3em; }
+.morespacebefore   { margin-top: 0.75em; }
+
+.nospaceafter		 { margin-bottom: 0; }
+.bitspaceafter	    { margin-bottom: 0.3em; }
+.morespaceafter	 { margin-bottom: 0.75em; }
+
+.tight		 {	margin: 0 0 0 0; }
+
+/* Coloured text */
+.red		 { color: red;  }
+.blue		 { color: #339; }
+.sep {color:gray;}
+.url {color:gray;}
+.k {color:brown;}
+.v {color:green;}
+
+/* "NOTES" box, blue outline, light blue background */
+.box {
+	width: 400 px;
+	padding: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	border: 2px solid #339;
+	text-align: left;
+	background: #EDEEF9;
+}
+
+/* Tables */
+table { border-width: 1; padding: 3; }
+
+th { background-color: #EDEEF9; font-size: 0.9em; }
+
+td.name { font-weight: bold; }
+
+/* Miscellaneous */
+hr {
+	height: 2px; 
+	border-width: 0;
+	padding-top: -0.5em; 
+	color: #333399;
+	background-color: #333399;
+}
+
+span.big {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/* -------------------------------- menus ------------------------------------ */
+h1.nav {
+	margin-top: 0px; /* Header of sidebar menu */
+	margin-bottom: 0px;
+	padding: 23px 0px 23px 0px;
+	width: 170px;
+	border-bottom: 1px solid #ffcc33; /* yellow */
+	font-size: 1.4em;
+	text-align: center;
+	color: #ffcc33;
+	background-color: #339;
+}
+
+#menu, #submenu {
+	margin: 0;				/* These are for the ul */
+	padding-left: 0;
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+#menu a { 
+	display: block;				/* List elements: blue boxes, yellow bottom border, keep blue on sides */ 
+	width: 160px;
+	padding: 3px 5px 3px 5px;
+	background-color: #339;
+	border-bottom: solid 1px #fc3;
+	text-decoration: none;
+}
+
+#submenu a {
+	display: block;				/* List elements: white boxes, blue border */
+	width: 158px;
+	padding: 3px 5px 3px 5px;
+	background-color: #EDEEF9;		/* pale blue background */
+  	color: #339; 				/* blue submenu text    */
+	border-bottom: solid 1px #339;
+	border-left: solid 1px #339;
+	border-right: solid 1px #339;			
+	text-decoration: none;
+	text-align: right;
+}
+
+#menu a:link, #menu a:visited {
+  	color: #eee; 				/* light grey menu text */
+	text-decoration: none;
+}
+
+#menu a:hover, #submenu a:hover {
+	background-color: #fc3;		/* yellow rollover box */ 
+	color: #339;			/* blue text & border  */ 
+}
+
+#current a {
+	background-color: #fc3;		/* yellow rollover box */ 
+}

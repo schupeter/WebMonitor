@@ -1,0 +1,21 @@
+<%= render :partial => 'head' %>
+<%= render :partial => 'navigation' %>
+
+		<table>
+		<% for url in @urlArray do %>
+			<tr>
+				<td>
+					<%= url.id %>
+				</td>
+				<td>
+					<% if url.status == "OK" then %><font color="green"><% else %><font color="red"><% end %> <%= url.status %></font>
+				</td>
+				<td>
+					<a href="<%= url.url %>"><%if url.url.size < 80 then%><%= url.url %><%else%><%= url.url[0..77] %>...<%end%></a>
+				</td>
+			</tr>
+		<% end %>
+	</table>
+	</div>
+
+<%= render :partial => 'tail' %>

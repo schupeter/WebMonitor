@@ -1,0 +1,5 @@
+config/database.yml
+config/environment.rb
+log/*.log
+tmp/**/*
+public/snapshots/*

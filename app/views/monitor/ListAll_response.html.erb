@@ -1,0 +1,15 @@
+<%= render :partial => 'head' %>
+<%= render :partial => 'navigation' %>
+
+		<table>
+		<% for url in @urlArray do %>
+			<tr>
+				<td>
+					<a href="<%= url.url %>"><%if url.url.size < 90 then%><%= url.url %><%else%><%= url.url[0..87] %>...<%end%></a>
+				</td>
+			</tr>
+		<% end %>
+	</table>
+	</div>
+
+<%= render :partial => 'tail' %>
