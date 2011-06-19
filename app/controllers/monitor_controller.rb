@@ -13,7 +13,17 @@ class MonitorController < ApplicationController
 		@urlArray = Url.find(:all)
 		for resource in @urlArray do
 			referenceSnapshot = File.open("#{RAILS_ROOT}/public/snapshots/#{resource.id}.txt","r").read
-			newSnapshot = open(resource.url).read()
+			begin
+				newSnapshot = open(resource.url).read()
+			rescue OpenURI::HTTPError #=> e
+				resource.status = "Error"
+				resource.save
+				next
+			rescue SocketError
+				resource.status = "Error"
+				resource.save
+				next
+			end
 			if referenceSnapshot == newSnapshot then
 				resource.status = "OK"
 			else
